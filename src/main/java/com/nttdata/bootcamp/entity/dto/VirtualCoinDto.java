@@ -12,6 +12,5 @@ import lombok.ToString;
 public class VirtualCoinDto {
     private String dni;
     private String cellNumber;
-    private String IMEI ;
     private String email;
 }

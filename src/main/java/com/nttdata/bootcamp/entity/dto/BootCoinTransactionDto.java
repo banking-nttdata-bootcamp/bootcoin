@@ -9,7 +9,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class VirtualCoinTransactionDto {
+public class BootCoinTransactionDto {
     private String cellNumber;
     private Double mount;
 }

@@ -1,7 +1,7 @@
 package com.nttdata.bootcamp.service;
 
-import com.nttdata.bootcamp.entity.VirtualCoin;
+import com.nttdata.bootcamp.events.EventKafka;
 
 public interface KafkaService {
-    void publish(VirtualCoin customer);
+    void consumerSave(EventKafka<?> eventKafka);
 }

@@ -16,28 +16,14 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-    @Document(collection = "virtual-coin")
-public class VirtualCoin {
+    @Document(collection = "bootcoin")
+public class BootCoin {
     @Id
     private String id;
 
     private String dni;
     private String cellNumber;
-    private String IMEI ;
     private String email;
-    private Boolean flagDebitCard;
-    private String numberDebitCard;
-    private String numberAccount;
-    private String typeOperation;
-    private Double mount;
-
-
-
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    @CreatedDate
-    private Date creationDate;
-
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    @LastModifiedDate
-    private Date modificationDate;
+    private Number mount;
+    private String numberTransaction;
 }
