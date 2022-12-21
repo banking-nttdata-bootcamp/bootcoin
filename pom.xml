@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nttdata.bootcamp</groupId>
-	<artifactId>virtual-coin</artifactId>
+	<artifactId>bootcoin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>virtual-coin</name>
+	<name>bootcoin</name>
 	<description>Microservicios</description>
 	<properties>
 		<java.version>11</java.version>
