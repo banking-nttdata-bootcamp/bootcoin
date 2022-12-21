@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 @Slf4j
 @Service
 public class KafkaServiceImpl implements KafkaService {
@@ -32,7 +34,7 @@ public class KafkaServiceImpl implements KafkaService {
             BootCoin bootCoin = new BootCoin();
             bootCoin.setMount(virtualCoinKafkaDto.getMount());
             bootCoin.setCellNumber(virtualCoinKafkaDto.getCellNumberReceive());
-
+            bootCoin.setNumberTransaction(UUID.randomUUID().toString());
             this.bootCoinRepository.save(bootCoin).subscribe();
         }
     }
